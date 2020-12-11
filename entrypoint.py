@@ -20,8 +20,8 @@ if __name__ == "__main__":
             versions.append(version.strip())
 
     for version in versions:
-        logging.info(f"Installing Cython")
-        subprocess.call([f"/opt/python/{VERSIONS[version]}/bin/python", "-m", "pip", "install", "cython"])
+        logging.info(f"Installing required packages")
+        subprocess.call([f"/opt/python/{VERSIONS[version]}/bin/python", "-m", "pip", "install", "wheel", "cython"])
         logging.info(f"Building wheel for Python {version}")
         subprocess.call([f"/opt/python/{VERSIONS[version]}/bin/python", "setup.py", "bdist_wheel"])
 
