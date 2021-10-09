@@ -3,7 +3,13 @@ import os
 import subprocess
 import sys
 
-VERSIONS = {"3.6": "cp36-cp36m", "3.7": "cp37-cp37m", "3.8": "cp38-cp38", "3.9": "cp39-cp39"}
+VERSIONS = {
+    "3.6": "cp36-cp36m", 
+    "3.7": "cp37-cp37m", 
+    "3.8": "cp38-cp38", 
+    "3.9": "cp39-cp39", 
+    "3.10": "cp310-cp310",
+}
 
 if __name__ == "__main__":
 
